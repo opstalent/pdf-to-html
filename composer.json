@@ -2,8 +2,20 @@
     "name": "opstalent/pdftohtml",
     "description": "PDF to HTML PHP lib",
     "type": "library",
+    "keywords": [
+        "htmltopdf",
+        "html2pdf"
+    ],
     "require": {
         "php": "^7"
+    },
+    "autoload": {
+        "psr-0": {
+            "Opstalent\\PdfToHtml": ""
+        },
+        "psr-4": {
+            "Opstalent\\PdfToHtml\\": ""
+        }
     },
     "license": "MIT",
     "authors": [
