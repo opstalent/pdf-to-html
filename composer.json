@@ -1,0 +1,16 @@
+{
+    "name": "opstalent/pdftohtml",
+    "description": "PDF to HTML PHP lib",
+    "type": "library",
+    "require": {
+        "php": "^7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patryk Grudniewski",
+            "email": "patgrudniewski@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
