@@ -9,6 +9,11 @@
     "require": {
         "php": "^7"
     },
+    "scripts": {
+        "pre-install-cmd": [
+            "Opstalent\\PdfToHtml\\Composer\\DependencyResolver::resolve"
+        ]
+    },
     "autoload": {
         "psr-0": {
             "Opstalent\\PdfToHtml": ""
