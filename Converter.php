@@ -37,8 +37,9 @@ class Converter
         if ($pdfFile->getMimeType() != 'application/pdf') {
             throw new \InvalidArgumentException(sprintf('MIME type of converted file is expected to be "application/pdf", "%s" given', $pdfFile->getMimeType()));
         }
-
-        $htmlFileBase = 'output';
+        if (!is_file($pdfFile->getRealPath())) {
+            throw new \InvalidArgumentException('Given file info is not valid file');
+        }
 
         $fs->remove(static::$outputDir);
         $fs->mkdir(static::$outputDir);
