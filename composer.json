@@ -2,8 +2,27 @@
     "name": "opstalent/pdftohtml",
     "description": "PDF to HTML PHP lib",
     "type": "library",
+    "keywords": [
+        "htmltopdf",
+        "html2pdf"
+    ],
     "require": {
-        "php": "^7"
+        "php": "^7",
+        "symfony/filesystem": "^3.2",
+        "symfony/dom-crawler": "^3.2"
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "Opstalent\\PdfToHtml\\Composer\\DependencyResolver::resolve"
+        ]
+    },
+    "autoload": {
+        "psr-0": {
+            "Opstalent\\PdfToHtml": ""
+        },
+        "psr-4": {
+            "Opstalent\\PdfToHtml\\": ""
+        }
     },
     "license": "MIT",
     "authors": [
