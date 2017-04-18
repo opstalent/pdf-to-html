@@ -29,6 +29,7 @@ class Converter
     /**
      * @param \SplFileInfo $pdfFile
      * @return Crawler
+     * @throws \InvalidArgumentException
      */
     public static function convert(\SplFileInfo $pdfFile) : Crawler
     {
